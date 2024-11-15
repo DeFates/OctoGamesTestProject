@@ -1,0 +1,97 @@
+; English <en> to English <en> localization document for `MaineScript` naninovel script
+
+# ffcdec4
+; @input player summary:"Enter your name."
+@input player summary:"Enter your name."
+
+# 305beaaf
+; y: Hello, {player}! I have an important task for you. 
+y: Hello, {player}! I have an important task for you. 
+
+# 69d0e13e
+; y: There's an ancient artifact that needs to be found, but you need to speak to Midori at the temple first.
+y: There's an ancient artifact that needs to be found, but you need to speak to Midori at the temple first.
+
+# b39307d7
+; y: She definitely knows more about this artifact. Hurry, I'm counting on you!
+y: She definitely knows more about this artifact. Hurry, I'm counting on you!
+
+# 2b5e86
+; m: Hello, {player}. Yuki said you'd be coming.
+m: Hello, {player}. Yuki said you'd be coming.
+
+# 8b226087
+; m: To find the artifact, you'll need to prove your courage in a mini-game. Get ready!
+m: To find the artifact, you'll need to prove your courage in a mini-game. Get ready!
+
+# a3e014b6
+; m: Alright, no matter your result, you did well!
+m: Alright, no matter your result, you did well!
+
+# 35b9f878
+; m: Now, you need to go to the shrine and find the artifact there. It's hidden in a special spot.
+m: Now, you need to go to the shrine and find the artifact there. It's hidden in a special spot.
+
+# 1c0bd793
+; You carefully take the artifact. It can't be left here anymore.
+You carefully take the artifact. It can't be left here anymore.
+
+# 2ccdcec3
+; {player}: Midori's not here... Strange, maybe she already knows I took the artifact.
+{player}: Midori's not here... Strange, maybe she already knows I took the artifact.
+
+# 7aa32b2d
+; {player}: I guess it's time to return to Yuki.
+{player}: I guess it's time to return to Yuki.
+
+# d79c7cd9
+; y: {player}, I see you brought the artifact. Give it to me, I know what to do with it!
+y: {player}, I see you brought the artifact. Give it to me, I know what to do with it!
+
+# 6a7e841f
+; m: No {player}, don't listen to her. The artifact should stay in the temple. Give it to me!
+m: No {player}, don't listen to her. The artifact should stay in the temple. Give it to me!
+
+# a98431d9
+; {player}: Who should I give the artifact to? Or should I keep it for myself?
+{player}: Who should I give the artifact to? Or should I keep it for myself?
+
+# 688c944f
+; @choice "Give the artifact to Yuki" goto:.GiveYuki
+@choice "Give the artifact to Yuki" goto:.GiveYuki
+
+# 31a5435d
+; @choice "Give it to Midori" goto:.GiveMidori
+@choice "Give it to Midori" goto:.GiveMidori
+
+# b092e4d9
+; @choice "Keep it for myself" goto:.KeepIt
+@choice "Keep it for myself" goto:.KeepIt
+
+# d6e15df2
+; y.Smile: Thank you, {player}. I won't forget this!
+y.Smile: Thank you, {player}. I won't forget this!
+
+# d6ebba5a
+; m.Sad: Alright then... let it be. (Midori looks disappointed)
+m.Sad: Alright then... let it be. (Midori looks disappointed)
+
+# 48b681d
+; m.Happy: You made the right choice, {player}. I'm grateful!
+m.Happy: You made the right choice, {player}. I'm grateful!
+
+# 381ee1b0
+; y.Annoyed: Oh, how could you?! I won't forgive this! (Yuki looks disappointed)
+y.Annoyed: Oh, how could you?! I won't forgive this! (Yuki looks disappointed)
+
+# 634a6c49
+; {player}: Sorry, but I'm keeping the artifact.
+{player}: Sorry, but I'm keeping the artifact.
+
+# 514b82bf
+; y.Annoyed: How could you do that?! That's selfish!
+y.Annoyed: How could you do that?! That's selfish!
+
+# 1c0e31b
+; m.Sad: Oh, {player}, I'm disappointed in you...
+m.Sad: Oh, {player}, I'm disappointed in you...

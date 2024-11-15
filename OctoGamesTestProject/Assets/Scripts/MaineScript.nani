@@ -1,0 +1,74 @@
+@input player summary:"Enter your name."
+@stop
+@back Classroom
+@char y
+y: Hello, {player}! I have an important task for you. 
+y: There's an ancient artifact that needs to be found, but you need to speak to Midori at the temple first.
+y: She definitely knows more about this artifact. Hurry, I'm counting on you!
+
+; Get quest "Go to Midori in temple"
+@hideAll
+@back Temple
+@char m
+m: Hello, {player}. Yuki said you'd be coming.
+m: To find the artifact, you'll need to prove your courage in a mini-game. Get ready!
+
+; Start minigame
+
+m: Alright, no matter your result, you did well!
+m: Now, you need to go to the shrine and find the artifact there. It's hidden in a special spot.
+
+; New quest "find artifact in shrine"
+@hideAll
+@back Shrine
+; Take artifact
+
+You carefully take the artifact. It can't be left here anymore.
+; Rework this text
+
+; disable this location and tp to temple
+@hideAll
+@back Temple
+@char p
+
+{player}: Midori's not here... Strange, maybe she already knows I took the artifact.
+{player}: I guess it's time to return to Yuki.
+
+; new quest "go to School"
+@hideAll
+@back Classroom
+@char y
+@char m
+
+y: {player}, I see you brought the artifact. Give it to me, I know what to do with it!
+m: No {player}, don't listen to her. The artifact should stay in the temple. Give it to me!
+
+{player}: Who should I give the artifact to? Or should I keep it for myself?
+
+@choice "Give the artifact to Yuki" goto:.GiveYuki
+
+@choice "Give it to Midori" goto:.GiveMidori
+
+@choice "Keep it for myself" goto:.KeepIt
+
+@stop
+
+#GiveYuki
+y.Smile: Thank you, {player}. I won't forget this!
+m.Sad: Alright then... let it be. (Midori looks disappointed)
+@stop
+
+#GiveMidori
+m.Happy: You made the right choice, {player}. I'm grateful!
+y.Annoyed: Oh, how could you?! I won't forgive this! (Yuki looks disappointed)
+@stop
+
+#KeepIt
+{player}: Sorry, but I'm keeping the artifact.
+y.Annoyed: How could you do that?! That's selfish!
+m.Sad: Oh, {player}, I'm disappointed in you...
+@stop
+
+; End quest, disable quest-log.
+
+@stop
